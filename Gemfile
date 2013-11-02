@@ -7,6 +7,7 @@ gem 'rails-api'
 
 # Use MongoDB for the database
 gem 'mongoid'
+gem 'bson_ext'
 
 # Capybara for scraping
 gem 'capybara'
