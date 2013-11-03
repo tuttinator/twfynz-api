@@ -1,6 +1,7 @@
 module Seeds
-
   module Parliaments
+
+   # Dependent on Party seed first
 
     DATA = [
       {ordinal_number: 1,  majority_party: nil},
@@ -27,7 +28,7 @@ module Seeds
       {ordinal_number: 22, majority_party: Party.find_by(name: "Reform Party")},
       {ordinal_number: 23, majority_party: Party.find_by(name: "United Party")},
       {ordinal_number: 24, majority_party: Party.find_by(name: "Reform Party"), coalition: true, 
-                           government_parties: [Party.find_by(name: "Reform Party"), Party.find_by(name: "United Party")]},
+                           governing_parties: [Party.find_by(name: "Reform Party"), Party.find_by(name: "United Party")]},
       {ordinal_number: 25, majority_party: Party.find_by(name: "Labour Party")},
       {ordinal_number: 26, majority_party: Party.find_by(name: "Labour Party")},
       {ordinal_number: 27, majority_party: Party.find_by(name: "Labour Party")},
@@ -51,27 +52,27 @@ module Seeds
       {ordinal_number: 45, majority_party: Party.find_by(name: "National Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "National Party"), 
                                                  Party.find_by(name: "ACT Party"), 
-                                                 Party.find_by(name: "New Zealand First Party")]},
+                                                 Party.find_by(name: "New Zealand First")]},
       {ordinal_number: 46, majority_party: Party.find_by(name: "Labour Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "Labour Party"), 
-                                                 Party.find_by(name: "Alliance Party"), 
+                                                 Party.find_by(name: "Alliance"), 
                                                  Party.find_by(name: "Green Party")]},
       {ordinal_number: 47, majority_party: Party.find_by(name: "Labour Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "Labour Party"), 
                                                  Party.find_by(name: "Progressives"), 
-                                                 Party.find_by(name: "United Future Party")]},
+                                                 Party.find_by(name: "United Future")]},
       {ordinal_number: 48, majority_party: Party.find_by(name: "Labour Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "Labour Party"), 
                                                  Party.find_by(name: "Progressives"), 
-                                                 Party.find_by(name: "New Zealand First Party"), 
-                                                 Party.find_by(name: "United Future Party")]},
+                                                 Party.find_by(name: "New Zealand First"), 
+                                                 Party.find_by(name: "United Future")]},
       {ordinal_number: 49, majority_party: Party.find_by(name: "National Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "ACT Party"), 
-                                                 Party.find_by(name: "United Future Party"), 
+                                                 Party.find_by(name: "United Future"), 
                                                  Party.find_by(name: "Maori Party")]},
       {ordinal_number: 50, majority_party: Party.find_by(name: "National Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "ACT Party"), 
-                                                 Party.find_by(name: "United Future Party"), 
+                                                 Party.find_by(name: "United Future"), 
                                                  Party.find_by(name: "Maori Party")]}
   ]
 
