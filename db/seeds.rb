@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+%W[election_results elections parliaments seats].each do |seed_file|
+  require Rails.root.join('seeds', seed_file)
+end
+
+Seeds::Parties::DATA.each do |data|
+  Party.create(data)
+end
+
+Seeds::Parliaments::DATA.each do |data|
+  Parliament.create(data)
+end
