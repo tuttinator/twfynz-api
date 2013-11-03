@@ -3,15 +3,15 @@ module Seeds
 
     module Parliamentary
       DATA = [
-        { name: "National Party", founded: Date.new(1936, 5, 13), logo_url: 'http://upload.wikimedia.org/wikipedia/en/7/74/New_Zealand_National_Party_logo.svg' },
-        { name: "Labour Party", founded: Date.new(1916, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/commons/a/a7/New_Zealand_Labour_logo_2011.svg' },
+        { name: "National Party", founded: Date.new(1936, 5, 13), logo_url: 'http://upload.wikimedia.org/wikipedia/en/7/74/New_Zealand_National_Party_logo.svg', parliamentary: true },
+        { name: "Labour Party", founded: Date.new(1916, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/commons/a/a7/New_Zealand_Labour_logo_2011.svg', parliamentary: true },
         # TODO: Check the founding date of the New Zealand Green Party (wikipedia states 'May 1990')
-        { name: "Green Party", founded: Date.new(1990, 5), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d3/Green_Party_of_Aotearoa_New_Zealand_logo.svg' },
-        { name: "New Zealand First", founded: Date.new(1993, 7, 18), logo_url: 'http://upload.wikimedia.org/wikipedia/en/5/51/Logo_New_Zealand_First.svg' },
-        { name: "Maori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Maori_Party_logo.svg' },
-        { name: "Mana Party", founded: Date.new(2011, 4, 30), logo_url: 'http://upload.wikimedia.org/wikipedia/en/8/80/New_Zealand_Mana_Party_logo.png' },
-        { name: "United Future", founded: Date.new(2000), logo_url: 'http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Unitedfuture.png/800px-Unitedfuture.png' },
-        { name: "ACT Party", founded: Date.new(1994), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d8/ACT_New_Zealand_logo.svg' }
+        { name: "Green Party", founded: Date.new(1990, 5), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d3/Green_Party_of_Aotearoa_New_Zealand_logo.svg', parliamentary: true },
+        { name: "New Zealand First", founded: Date.new(1993, 7, 18), logo_url: 'http://upload.wikimedia.org/wikipedia/en/5/51/Logo_New_Zealand_First.svg', parliamentary: true },
+        { name: "Maori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Maori_Party_logo.svg', parliamentary: true },
+        { name: "Mana Party", founded: Date.new(2011, 4, 30), logo_url: 'http://upload.wikimedia.org/wikipedia/en/8/80/New_Zealand_Mana_Party_logo.png', parliamentary: true },
+        { name: "United Future", founded: Date.new(2000), logo_url: 'http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Unitedfuture.png/800px-Unitedfuture.png', parliamentary: true },
+        { name: "ACT Party", founded: Date.new(1994), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d8/ACT_New_Zealand_logo.svg', parliamentary: true }
       ]
     end
 
