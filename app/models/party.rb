@@ -1,7 +1,13 @@
 class Party
   include Mongoid::Document
 
-  field :name, String
-  field :alternate_names, Array
+  field :short_name, type: String
+  field :alternate_names, type: Array
+  field :founded, type: Date
+  
+
+  def name
+    short_name
+  end
 
 end

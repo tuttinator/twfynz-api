@@ -1,5 +1,5 @@
-%W[election_results elections parliaments seats].each do |seed_file|
-  require Rails.root.join('seeds', seed_file)
+%W[election_results elections parliaments seats parties].each do |seed_file|
+  require Rails.root.join('db', 'seeds', seed_file)
 end
 
 Seeds::Parties::DATA.each do |data|

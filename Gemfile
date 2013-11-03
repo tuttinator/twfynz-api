@@ -6,8 +6,7 @@ gem 'rails', '4.0.0'
 gem 'rails-api'
 
 # Use MongoDB for the database
-gem 'mongoid'
-gem 'bson_ext'
+gem 'mongoid', github: 'mongoid/mongoid'
 
 # Capybara for scraping
 gem 'capybara'
