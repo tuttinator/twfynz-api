@@ -5,7 +5,9 @@ class Election
   field :type,                  type: String
   field :voting_commenced_on,   type: Date
   field :voting_finished_on,    type: Date
-  field :turnout,               type: Integer
   field :percentage_turnout,    type: Float
+  field :registered_voters,     type: Integer
   field :notes,                 type: String
+
+  belongs_to :parliament
 end
