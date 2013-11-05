@@ -17,3 +17,5 @@
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
 Twfynz::Application.config.secret_token = '472b074c3a1d2a48164f8c538068ecf35035848b3a264747191050711538c67654b7f81e3dfc35280af60830843b9955f4815674f1633d7c43e05d0e57c28a42'
+
+Twfynz::Application.config.secret_key_base ='c5d1f9108ae49864824702d2a313654f9e8e6342daae81e3b87599f72487e572b894d9ab6440ec0eb46b5bfa93df19bd7911e9a82e9cfcab2ac1395a8a1b4978'

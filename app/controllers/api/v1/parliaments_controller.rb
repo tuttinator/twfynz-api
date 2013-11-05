@@ -1,8 +1,7 @@
-class API::V1::ParliamentsController < ApplicationController
-  responds_to :json
+class Api::V1::ParliamentsController < ApplicationController
 
   def index
-    respond_with Parliament.all
+    render json: Parliament.all
   end
 
 end
