@@ -6,8 +6,7 @@ gem 'rails', '4.0.0'
 gem 'rails-api'
 
 # Use MongoDB for the database
-gem 'mongoid'
-gem 'bson_ext'
+gem 'mongoid', github: 'mongoid/mongoid'
 
 # Capybara for scraping
 gem 'capybara'
@@ -17,4 +16,5 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'pry-rails'
+  gem 'guard-rspec', require: false
 end
