@@ -12,7 +12,8 @@ gem 'mongoid', github: 'mongoid/mongoid'
 gem 'capybara'
 gem 'capybara-mechanize'
 
-group :test, :development do 
+group :test, :development do
+  gem 'thin'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'pry-rails'

@@ -18,6 +18,7 @@ class Parliament
   embeds_many :seats
 
   validates_numericality_of :ordinal_number
+  validates_uniqueness_of   :ordinal_number
 
   def number_of_seats
     seats.count

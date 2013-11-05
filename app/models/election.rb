@@ -1,6 +1,6 @@
 class Election
   include Mongoid::Document
-  include Mongoid::Timestamps
+  include Mongoid::Timestamp
 
   field :type,                  type: String
   field :voting_commenced_on,   type: Date
