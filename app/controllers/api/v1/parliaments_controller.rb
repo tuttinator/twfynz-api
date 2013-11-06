@@ -1,7 +1,7 @@
 class Api::V1::ParliamentsController < ApplicationController
 
   def index
-    render json: Parliament.all
+    @parliaments = Parliament.all
   end
 
 end
