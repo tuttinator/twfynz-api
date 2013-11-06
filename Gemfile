@@ -5,6 +5,11 @@ gem 'rails', '4.0.0'
 # Defattened Rails
 gem 'rails-api'
 
+# RABL for JSON templates
+gem 'rabl'
+# OJ as JSON parser
+gem 'oj'
+
 # Use MongoDB for the database
 gem 'mongoid', github: 'mongoid/mongoid'
 

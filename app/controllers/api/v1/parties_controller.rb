@@ -1,7 +1,7 @@
 class Api::V1::PartiesController < ApplicationController
 
   def index
-    render json: Party.all
+    @parties = Party.all
   end
 
 end
