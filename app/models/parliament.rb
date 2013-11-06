@@ -12,7 +12,7 @@ class Parliament
   # This is a has_many relationship because:
   #
   # While only ever one General Election, there can be zero to many by-elections, 
-  # and in early Parliaments separate Maori elections, and 'supplemental' elections
+  # and in early Parliaments separate Māori elections, and 'supplemental' elections
   has_many :elections
 
   has_and_belongs_to_many :governing_parties, class_name: "Party", 

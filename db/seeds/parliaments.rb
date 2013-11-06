@@ -69,11 +69,11 @@ module Seeds
       {ordinal_number: 49, majority_party: Party.find_by(name: "National Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "ACT Party"), 
                                                  Party.find_by(name: "United Future"), 
-                                                 Party.find_by(name: "Maori Party")]},
+                                                 Party.find_by(name: "Māori Party")]},
       {ordinal_number: 50, majority_party: Party.find_by(name: "National Party"), minority_government: true,
                            confidence_partners: [Party.find_by(name: "ACT Party"), 
                                                  Party.find_by(name: "United Future"), 
-                                                 Party.find_by(name: "Maori Party")]}
+                                                 Party.find_by(name: "Māori Party")]}
   ]
 
   end

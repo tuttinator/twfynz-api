@@ -8,7 +8,7 @@ module Seeds
         # TODO: Check the founding date of the New Zealand Green Party (wikipedia states 'May 1990')
         { name: "Green Party", founded: Date.new(1990, 5), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d3/Green_Party_of_Aotearoa_New_Zealand_logo.svg', parliamentary: true },
         { name: "New Zealand First", founded: Date.new(1993, 7, 18), logo_url: 'http://upload.wikimedia.org/wikipedia/en/5/51/Logo_New_Zealand_First.svg', parliamentary: true },
-        { name: "Maori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Maori_Party_logo.svg', parliamentary: true },
+        { name: "Māori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Māori_Party_logo.svg', parliamentary: true },
         { name: "Mana Party", founded: Date.new(2011, 4, 30), logo_url: 'http://upload.wikimedia.org/wikipedia/en/8/80/New_Zealand_Mana_Party_logo.png', parliamentary: true },
         { name: "United Future", founded: Date.new(2000), logo_url: 'http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Unitedfuture.png/800px-Unitedfuture.png', parliamentary: true },
         { name: "ACT Party", founded: Date.new(1994), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d8/ACT_New_Zealand_logo.svg', parliamentary: true }
