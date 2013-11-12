@@ -1,7 +1,7 @@
 FactoryGirl.define do
   
   factory :parliament do
-    ordinal_number { Parliament.last.ordinal_number + 50 }
+    ordinal_number { (Parliament.last.try(:ordinal_number) || 0) + 1 }
   end
 
   factory :party do
@@ -15,10 +15,10 @@ FactoryGirl.define do
   end
 
   factory :election do
-    voting_commenced_on Date.new(2011, 11, 26), 
-    voting_finished_on Date.new(2011, 11, 26), 
+    voting_commenced_on Date.new(2011, 11, 26) 
+    voting_finished_on Date.new(2011, 11, 26) 
     parliament
-    registered_voters 3_070_847, 
+    registered_voters 3_070_847
     percentage_turnout 74.2
   end
 

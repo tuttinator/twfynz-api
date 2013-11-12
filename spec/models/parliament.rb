@@ -1,5 +1,0 @@
-describe Parliament do
-
-  
-
-end
