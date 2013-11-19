@@ -5,8 +5,8 @@ gem 'rails', '4.0.1'
 # Defattened Rails
 gem 'rails-api'
 
-# RABL for JSON templates
-gem 'rabl'
+# ActiveModel::Serializers
+gem 'active_model_serializers'
 # OJ as JSON parser
 gem 'oj'
 
