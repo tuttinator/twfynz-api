@@ -15,11 +15,11 @@ class Parliament
   # and in early Parliaments separate Māori elections, and 'supplemental' elections
   has_many :elections
 
-  has_and_belongs_to_many :governing_parties, class_name: "Party", 
+  has_and_belongs_to_many :governing_parties, class_name: "Party",
                           inverse_of: :confidence_partner_parliamentary_terms
   # In MMP Confidence and Supply agreements are common arrangements
   # where parties are not formally coalition partners
-  has_and_belongs_to_many :confidence_partners, class_name: "Party", 
+  has_and_belongs_to_many :confidence_partners, class_name: "Party",
                           inverse_of: :coalition_government_parliamentary_terms
 
   embeds_many :seats
