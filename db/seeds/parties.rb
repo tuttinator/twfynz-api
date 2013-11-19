@@ -29,26 +29,26 @@ module Seeds
 
     module Historical
       DATA = [
-        { name: "Christian Democrats", founded: Date.new(1995), dissolved: Date.new(1998)},
-        { name: "Christian Heritage NZ", founded: Date.new(1990), dissolved: Date.new(2006) },
+        { name: "Christian Democrats", founded: Date.new(1995), dissolved: Date.new(1998), slug: 'christian-democrats'},
+        { name: "Christian Heritage NZ", founded: Date.new(1990), dissolved: Date.new(2006), slug: 'christian-heritage-nz' },
         # Check the founding and dissolution for the Country Party
-        { name: "Country Party" },
-        { name: "Democratic Labour Party", founded: Date.new(1940), dissolved: Date.new(1943)},
-        { name: "Future New Zealand", founded: Date.new(1994), dissolved: Date.new(1995)},
-        { name: "Independent Political Labour League", founded: Date.new(1905), dissolved: Date.new(1910) },
-        { name: "Liberal Party", founded: Date.new(1891), dissolved: Date.new(1927) },
-        { name: "Mana Wahine Te Ira Tangata", founded: Date.new(1998), dissolved: Date.new(2001) },
-        { name: "Mauri Pacific", founded: Date.new(1999), dissolved: Date.new(2001) },
-        { name: "NewLabour Party", founded: Date.new(1989), dissolved: Date.new(1991) },
-        { name: "Pacific Party", founded: Date.new(2008), dissolved: Date.new(2010) },
-        { name: "Progressives", founded: Date.new(2002), dissolved: Date.new(2012) },
-        { name: "Reform Party", founded: Date.new(1909), dissolved: Date.new(1936) },
-        { name: "Social Credit Party", founded: Date.new(1953), dissolved: Date.new(1986) },
-        { name: "Social Democratic Party", founded: Date.new(1913), dissolved: Date.new(1916) },
-        { name: "Socialist Party", founded: Date.new(1901), dissolved: Date.new(1913) },
-        { name: "United New Zealand", founded: Date.new(1995), dissolved: Date.new(2000) },
-        { name: "United Labour Party", founded: Date.new(1912), dissolved: Date.new(1913) },
-        { name: "United Party", founded: Date.new(1927), dissolved: Date.new(1936) }
+        { name: "Country Party", slug: 'country-party' },
+        { name: "Democratic Labour Party", founded: Date.new(1940), dissolved: Date.new(1943), slug: 'democratic-labour-party'},
+        { name: "Future New Zealand", founded: Date.new(1994), dissolved: Date.new(1995), slug: 'future-new-zealand'},
+        { name: "Independent Political Labour League", founded: Date.new(1905), dissolved: Date.new(1910), slug: 'independent-political-labour-league' },
+        { name: "Liberal Party", founded: Date.new(1891), dissolved: Date.new(1927), slug: 'liberal-party' },
+        { name: "Mana Wahine Te Ira Tangata", founded: Date.new(1998), dissolved: Date.new(2001), slug: 'mana-wahine-te-ira-tangata' },
+        { name: "Mauri Pacific", founded: Date.new(1999), dissolved: Date.new(2001), slug: 'mauri-pacific' },
+        { name: "NewLabour Party", founded: Date.new(1989), dissolved: Date.new(1991), slug: 'newlabour-party' },
+        { name: "Pacific Party", founded: Date.new(2008), dissolved: Date.new(2010), slug: 'pacific-party' },
+        { name: "Progressives", founded: Date.new(2002), dissolved: Date.new(2012), slug: 'progressives' },
+        { name: "Reform Party", founded: Date.new(1909), dissolved: Date.new(1936), slug: 'reform-party' },
+        { name: "Social Credit Party", founded: Date.new(1953), dissolved: Date.new(1986), slug: 'social-credit-party' },
+        { name: "Social Democratic Party", founded: Date.new(1913), dissolved: Date.new(1916), slug: 'social-democratic-party' },
+        { name: "Socialist Party", founded: Date.new(1901), dissolved: Date.new(1913), slug: 'socialist-party' },
+        { name: "United New Zealand", founded: Date.new(1995), dissolved: Date.new(2000), slug: 'united-new-zealand' },
+        { name: "United Labour Party", founded: Date.new(1912), dissolved: Date.new(1913), slug: 'united-labour-party' },
+        { name: "United Party", founded: Date.new(1927), dissolved: Date.new(1936), slug: 'united-party' }
       ]
     end
   end
