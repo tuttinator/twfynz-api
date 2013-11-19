@@ -3,26 +3,26 @@ module Seeds
 
     module Parliamentary
       DATA = [
-        { name: "National Party", founded: Date.new(1936, 5, 13), logo_url: 'http://upload.wikimedia.org/wikipedia/en/7/74/New_Zealand_National_Party_logo.svg', parliamentary: true },
-        { name: "Labour Party", founded: Date.new(1916, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/commons/a/a7/New_Zealand_Labour_logo_2011.svg', parliamentary: true },
+        { name: "National Party", founded: Date.new(1936, 5, 13), logo_url: 'http://upload.wikimedia.org/wikipedia/en/7/74/New_Zealand_National_Party_logo.svg', parliamentary: true, slug: 'national-party' },
+        { name: "Labour Party", founded: Date.new(1916, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/commons/a/a7/New_Zealand_Labour_logo_2011.svg', parliamentary: true, slug: 'labour-party' },
         # TODO: Check the founding date of the New Zealand Green Party (wikipedia states 'May 1990')
-        { name: "Green Party", founded: Date.new(1990, 5), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d3/Green_Party_of_Aotearoa_New_Zealand_logo.svg', parliamentary: true },
-        { name: "New Zealand First", founded: Date.new(1993, 7, 18), logo_url: 'http://upload.wikimedia.org/wikipedia/en/5/51/Logo_New_Zealand_First.svg', parliamentary: true },
-        { name: "Māori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Māori_Party_logo.svg', parliamentary: true },
-        { name: "Mana Party", founded: Date.new(2011, 4, 30), logo_url: 'http://upload.wikimedia.org/wikipedia/en/8/80/New_Zealand_Mana_Party_logo.png', parliamentary: true },
-        { name: "United Future", founded: Date.new(2000), logo_url: 'http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Unitedfuture.png/800px-Unitedfuture.png', parliamentary: true },
-        { name: "ACT Party", founded: Date.new(1994), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d8/ACT_New_Zealand_logo.svg', parliamentary: true }
+        { name: "Green Party", founded: Date.new(1990, 5), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d3/Green_Party_of_Aotearoa_New_Zealand_logo.svg', parliamentary: true, slug: 'green-party' },
+        { name: "New Zealand First", founded: Date.new(1993, 7, 18), logo_url: 'http://upload.wikimedia.org/wikipedia/en/5/51/Logo_New_Zealand_First.svg', parliamentary: true, slug: 'new-zealand-first' },
+        { name: "Māori Party", founded: Date.new(2004, 7, 7), logo_url: 'http://upload.wikimedia.org/wikipedia/en/1/12/Māori_Party_logo.svg', parliamentary: true, slug: 'maori-party' },
+        { name: "Mana Party", founded: Date.new(2011, 4, 30), logo_url: 'http://upload.wikimedia.org/wikipedia/en/8/80/New_Zealand_Mana_Party_logo.png', parliamentary: true, slug: 'mana-party' },
+        { name: "United Future", founded: Date.new(2000), logo_url: 'http://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Unitedfuture.png/800px-Unitedfuture.png', parliamentary: true, slug: 'united-future' },
+        { name: "ACT Party", founded: Date.new(1994), logo_url: 'http://upload.wikimedia.org/wikipedia/en/d/d8/ACT_New_Zealand_logo.svg', parliamentary: true, slug: 'act-party' }
       ]
     end
 
     module NonParliamentary
 
       DATA = [
-        { name: "Alliance", founded: Date.new(1991) },
-        { name: "Conservative Party", founded: Date.new(2011, 8, 3) },
-        { name: "Democrats for Social Credit", founded: Date.new(1985) },
-        { name: "Legalise Cannabis Party", founded: Date.new(1996) },
-        { name: "Libertarianz", founded: Date.new(1995) }
+        { name: "Alliance", founded: Date.new(1991), slug: 'alliance' },
+        { name: "Conservative Party", founded: Date.new(2011, 8, 3), slug: 'conservative-party' },
+        { name: "Democrats for Social Credit", founded: Date.new(1985), slug: 'democrats-for-social-credit' },
+        { name: "Legalise Cannabis Party", founded: Date.new(1996), slug: 'legalise-cannabis-party' },
+        { name: "Libertarianz", founded: Date.new(1995), slug: 'libertarianz' }
       ]
 
     end
