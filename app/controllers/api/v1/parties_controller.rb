@@ -4,4 +4,9 @@ class Api::V1::PartiesController < ApplicationController
     @parties = Party.all
   end
 
+  def show
+    @party = Party.find_by(slug: params[:id])
+    render json: @party
+  end
+
 end
