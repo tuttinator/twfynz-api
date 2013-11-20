@@ -57,7 +57,7 @@ module Parliament
       ### Crap, these links now seem to be deprecated :( :( :(
 
       # This link is for every Question for Oral Answer since 2003, in groups of 20 questions per page
-      visit "/en-NZ/PB/Business/QOA/Default.htm?p=0&sort=PublicationDate&order=0"
+      visit "/en-nz/pb/business/qoa/?Criteria.Parliament=-1"
 
       # Assumes that it'll find this: <td class='summary'><h3>Questions for oral answer 1 to 20 of 9721</h3></td>
       @total_questions = page.find("td.summary h3").text.match(/of ([\d]*)/)[1].to_i # should be a number like 9721
@@ -69,8 +69,8 @@ module Parliament
 
     def scrape
       questions = []
-      (0..find_number_of_pages).each do |n|
-        visit "/en-NZ/PB/Business/QOA/Default.htm?p=#{n}&sort=PublicationDate&order=0"
+      (1..find_number_of_pages).each do |n|
+        visit "/en-nz/pb/business/qoa/?Criteria.Parliament=-1&Criteria.PageNumber=#{n}"
 
         page.all("table.listing tbody tr").each do |tr|
 
