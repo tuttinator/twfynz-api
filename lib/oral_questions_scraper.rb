@@ -24,7 +24,7 @@ require 'capybara/mechanize'
 # Details here: http://www.elabs.se/blog/60-introducing-capybara-2-1
 
 module Parliament
-  
+
   class Question
     attr_accessor :date, :number, :topic, :mp, :minister, :url
   end
@@ -47,6 +47,7 @@ module Parliament
     QUESTIONS_PER_PAGE = 20
 
     def initialize
+      Capybara.app = true
       Capybara.current_driver = :mechanize
       Capybara.run_server = false
       Capybara.app_host = "http://www.parliament.nz"

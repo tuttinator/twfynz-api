@@ -24,6 +24,8 @@ class Parliament
 
   embeds_many :seats
 
+  embeds_many :question_times
+
   validates_numericality_of :ordinal_number
   validates_uniqueness_of   :ordinal_number
 
