@@ -99,16 +99,13 @@ module Parliament
           rescue
             puts "-- Possibly a question to the select committee chairperson"
           end
-
-          puts question.to_yaml
-
           questions << question
         end       
 
       end
 
 
-      puts questions.to_yaml
+      questions
 
     end
 
