@@ -63,8 +63,8 @@ module Parliament
       @total_questions = page.find("td.summary h3").text.match(/of ([\d]*)/)[1].to_i # should be a number like 9721
 
       # Return the number of page to loop through
-      # Cast to floats and then Floor'ed as the list is zero indexed
-      (@total_questions.to_f / QUESTIONS_PER_PAGE.to_f).floor
+      # Cast to floats and then ceilinged as 1 indexed
+      (@total_questions.to_f / QUESTIONS_PER_PAGE.to_f).ceil
     end
 
     def scrape
@@ -81,7 +81,7 @@ module Parliament
           question = Question.new
 
           # Parse the date of the Question Time session
-          question.date = Date.parse(tr.find("td.attrPublicationDate").text)
+          question.date = Date.parse(tr.find("td.attr").text)
 
           # Assign the question number and topic
           question.number, question.topic = tr.find("h4 a").text.split('.')
