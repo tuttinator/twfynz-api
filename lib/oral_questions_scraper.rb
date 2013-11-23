@@ -25,9 +25,7 @@ require 'capybara/mechanize'
 
 module Parliament
 
-  class Question
-    attr_accessor :date, :number, :topic, :mp, :minister, :url
-  end
+  Question = Struct.new(:date, :number, :topic, :mp, :minister, :url)
 
   class Scraper
 

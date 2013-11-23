@@ -2,6 +2,16 @@
 
 Description: TODO
 
+## Background to this project
+
+These two blog posts:
+
+- [They Work For You](http://tuttinator.com/blog/2013/11/23/they-work-for-you-nz/)
+
+- [TWFYNZ Progress](http://tuttinator.com/blog/2013/11/23/twfynz-progress/)
+
+should hopefully give an indication of some of the thinking behind this project.
+
 ## Project Setup
 
 How do I, as a developer, start working on the project?
